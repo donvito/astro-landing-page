@@ -4,16 +4,16 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
+// import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+// import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'AI Tools — Discover the potential of AI tools to transform the way you work and earn new income',
   ignoreTitleTemplate: true,
 };
 ---
@@ -37,7 +37,7 @@ const metadata = {
   </Hero>
 
   <!-- Note Widget ******************* -->
-  <Note />
+  <!-- <Note /> -->
   <!-- Features Widget *************** -->
 
   <Features
@@ -73,98 +73,105 @@ const metadata = {
     ]}
   />
 
-  <!-- Content Widget **************** -->
-
-  <Content
-    tagline="Inside template"
-    title="And what's inside? ..."
+  <Features
+    id="features"
+    title="Who Should Attend this Course?"
+    subtitle=""
     items={[
       {
-        title: 'Per ei quaeque sensibus',
+        title: 'Enthusiasts',
         description:
-          'Ex usu illum iudico molestie. Pro ne agam facete mediocritatem, ridens labore facete mea ei. Pro id apeirian dignissim.',
+          'Enthusiasts who want to learn about AI tools and how they can be used to enhance their work and business efficiency.',
+        icon: 'tabler:brand-tailwind',
       },
       {
-        title: 'Cu imperdiet posidonium sed',
+        title: 'Marketing Professionals',
         description:
-          'Amet utinam aliquando ut mea, malis admodum ocurreret nec et, elit tibique cu nec. Nec ex maluisset inciderint, ex quis.',
+          'Marketing professionals who would like to explore AI tools to create new contant.',
+        icon: 'tabler:components',
       },
       {
-        title: 'Nulla omittam sadipscing mel ne',
+        title: 'Content Creators',
         description:
-          'At sed possim oporteat probatus, justo graece ne nec, minim commodo legimus ut vix. Ut eos iudico quando soleat, nam modus.',
+          'Content Creators who would like to explore AI tools speed up content creation.',
+        icon: 'tabler:list-check',
       },
+      {
+        title: 'IT Professionals',
+        description:
+          'IT Professionals who would like to explore how AI tools can assist in their work as well as speed up learning.',
+        icon: 'tabler:rocket',
+      }
     ]}
-    image={{
-      src: import('~/assets/images/caos.jpg'),
-      alt: 'Colorful Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Ad vix debet docendi</h3>
-       Ne dicta praesent ocurreret has, diam theophrastus at pro. Eos etiam regione ut, persius eripuit quo id. Sit te
-      euismod tacimates.
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent
-    items={[
-      {
-        title: 'Per ei quaeque sensibus',
-      },
-      {
-        title: 'Cu imperdiet posidonium sed',
-      },
-      {
-        title: 'Nulla omittam sadipscing mel ne',
-      },
-      {
-        title: 'Per ei quaeque sensibus',
-      },
-      {
-        title: 'Cu imperdiet posidonium sed',
-      },
-      {
-        title: 'Nulla omittam sadipscing mel ne',
-      },
-    ]}
-    image={{
-      src: import('~/assets/images/vintage.jpg'),
-      alt: 'Vintage Image',
-    }}
   />
+
+
+  <!-- Content Widget **************** -->
+
+  
+  <!-- Content Widget **************** -->
+
+  <Content
+  isReversed
+  isAfterContent
+  items={[
+    {
+      title: 'Unlock the Power of AI Tools',
+      description: 'Learn how to harness the capabilities of AI tools to streamline your work processes and boost productivity.',
+    },
+    {
+      title: 'Efficiency Through Automation',
+      description: 'Discover how to automate repetitive tasks using AI, allowing you to focus on high-value activities that drive results.',
+    },
+    {
+      title: 'Insights from Real-World Experience',
+      description: 'Gain firsthand insights from my journey of integrating AI tools, including the challenges faced and lessons learned.',
+    },
+    {
+      title: 'Strategies for Increased Income Potential',
+      description: 'Explore strategies to leverage AI tools in ways that have the potential to significantly impact your income over time.',
+    },
+    {
+      title: 'Navigate the AI Landscape Confidently',
+      description: 'Get a clear understanding of different AI technologies, their applications, and how to choose the right tools for your needs.',
+    },
+  ]}
+  image={{
+    src: import('~/assets/images/vintage.jpg'),
+    alt: 'Vintage Image',
+  }}
+/>
+
 
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Get started with AI Tools!"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula.',
-        icon: 'tabler:package',
+        title: 'Step 1: <span class="font-medium">Explore AI Tools</span>',
+      description:
+        'Discover a range of AI tools available for various tasks. Learn about their capabilities and potential benefits for your workflow.',
+      icon: 'tabler:search',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</em>',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
-        icon: 'tabler:letter-case',
-      },
-      {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
-        icon: 'tabler:paint',
-      },
-      {
-        title: 'Ready!',
-        icon: 'tabler:check',
-      },
+      title: 'Step 2: <span class="font-medium">Identify Opportunities</span>',
+      description:
+        'Identify areas in your workflow where AI tools can automate repetitive tasks, allowing you to free up time for higher-value activities.',
+      icon: 'tabler:target',
+    },
+    {
+      title: 'Step 3: <span class="font-medium">Select the Right Tools</span>',
+      description:
+        'Dive deeper into the AI landscape and choose tools that align with your specific needs and goals. Understand the features and benefits of each tool.',
+      icon: 'tabler:tools',
+    },
+    {
+      title: 'Step 4: <span class="font-medium">Boost Productivity and Create New Income</span>',
+      description:
+        'Leverage AI tools to boost productivity through streamlined workflows, creating opportunities for new income streams by channeling saved time and enhanced efficiency into innovative projects and services.',
+      icon: 'tabler:tools',
+    },
     ]}
     image={{
       src: import('~/assets/images/creativity.jpg'),
@@ -172,132 +179,14 @@ const metadata = {
     }}
   />
 
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
-    items={[
-      {
-        title: 'Headers',
-        description:
-          'In general, Headers contain information that makes it easier for visitors to interact with the website.',
-        icon: 'flat-color-icons:template',
-      },
-      {
-        title: 'Heros',
-        description:
-          'If you want your website to get more than its fair share of visitors, the Hero section needs to be stellar.',
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'Features',
-        description:
-          'Display your product in action and how the Features actually create a solution for your target customer.',
-        icon: 'flat-color-icons:approval',
-      },
-      {
-        title: 'Content',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Call-to-Action',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
-        icon: 'flat-color-icons:database',
-      },
-    ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Features2>
-
-  <!-- HighlightedPosts Widget ******* -->
-
-  <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
-  />
-
-  <!-- FAQs Widget ******************* -->
-
-  <FAQs
-    title="Frequently Asked Questions"
-    subtitle="Duis turpis dui, fringilla mattis sem nec, fringilla euismod neque. Morbi tincidunt lacus nec tortor scelerisque pulvinar."
-    tagline="FAQs"
-    items={[
-      {
-        title: 'What do I need to start?',
-        description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
-      },
-      {
-        title: 'How to install the Astro + Tailwind CSS template?',
-        description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
-      },
-      {
-        title: "What's something that you don't understand?",
-        description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
-      },
-      {
-        title: "What's an example of when you changed your mind?",
-        description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
-      },
-      {
-        title: 'What is something that you would like to try again?',
-        description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
-      },
-      {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
-        description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
-      },
-    ]}
-  />
+ 
 
   <!-- Stats Widget ****************** -->
 
   <Stats
     stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
+      { title: 'Attendees', amount: '12K' },
+      { title: 'New Income Generated', amount: '$250K' },
     ]}
   />
 
@@ -310,12 +199,11 @@ const metadata = {
     }}
   >
     <Fragment slot="title">
-      Astro + <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Unlock your earning potential with AI
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Don't miss this incredible opportunity to harness the power of AI tools and transform your productivity. Unlock the door to new income streams!
     </Fragment>
   </CallToAction>
 </Layout>
